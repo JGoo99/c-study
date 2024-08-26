@@ -10,7 +10,7 @@ int main() {
   int list[10];
 
   // 참조자(&)는 배열 요소의 값을 변경한다.
-  for (int& i : list) {
+  for (int &i : list) {
     i = rand() % 100 + 1;
     cout << i << " ";
   }

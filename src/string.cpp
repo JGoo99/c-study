@@ -11,10 +11,10 @@ int main() {
 
   cout << "name : ";
   cin >> name;
-  cin.ignore(); // enter 키 삭제
+  cin.ignore(); // getline 전에는 꼭 enter 키 삭제
 
   cout << "address : ";
-  getline(cin, addr); // enter 키 없이 입력 가능
+  getline(cin, addr); // enter 키 까지 입력 받음.
   cout << addr << "의 " << name << "씨, 안녕하세요!" << endl;
 
   return 0;
